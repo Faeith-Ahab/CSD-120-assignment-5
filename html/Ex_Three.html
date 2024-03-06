@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOOVER</title>
+</head>
+
+
+
+<style>
+
+    body{
+        background-color: lavenderblush;
+        text-align: center;
+        margin-top: 200px;
+        font-size: 50px;
+    }
+
+    #divElement{
+        padding: 40px;
+    }
+    #red{
+        color: red;
+    }
+
+
+</style>
+
+
+
+<body>
+
+
+    <!--Exercise Three-->
+
+    <!-- Write a <div> element which turns red when someone moves the mouse over it.-->
+
+<div 
+
+id="divElement" onmouseover="changeColor('red')" onmouseout="changeColor('white')">I'm turning colour <div id="red">RED</div> on hoover!
+
+</div>  
+    
+
+
+<script>
+
+    function changeColor(color) {
+    const divElement = document.getElementById("divElement");
+    divElement.style.backgroundColor = color;
+            }
+</script>
+
+
+
+</body>
+</html>
